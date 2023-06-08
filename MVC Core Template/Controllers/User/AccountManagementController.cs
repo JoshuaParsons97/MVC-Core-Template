@@ -1,9 +1,9 @@
-﻿using Ecommerce.DataModels;
-using Ecommerce.ViewModels;
+﻿using CoreTemplate.DataModels;
+using CoreTemplate.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Ecommerce.Controllers.User
+namespace CoreTemplate.Controllers.User
 {
     public class AccountManagementController : BaseController
     {

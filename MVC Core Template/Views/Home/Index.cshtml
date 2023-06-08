@@ -1,15 +1,65 @@
 ﻿<h1 class="text-center text-light">This is a template for building MVC projects using .net core</h1>
 <h4 class="text-center text-light">This template contains:</h4>
-<ul class="text-light text-center">
-    <li>Create script for database</li>
-    <li>DB models</li>
-    <li>Authentication methods</li>
-    <li>Azure communication and storage integration</li>
-    <li>Role based authorization logic</li>
-    <li>Password recovery</li>
-    <li>Account management</li>
-    <li>"Contact us" using azure communication</li>
-    <li>Security module (Cryptography)</li>
-    <li>Notification framework</li>
-</ul>
+<table class="table table-dark table-striped">
+    <tbody>
+        <tr>
+            <td>Notification framework</td>
+            <td><button class="btn btn-primary w-100" onclick="LaunchNotifications()">Launch</button></td>
+        </tr>
+        <tr>
+            <td>Confirm dialog with callback</td>
+            <td><button class="btn btn-primary w-100" onclick="LaunchConfirmation()">Launch</button></td>
+        </tr>
+        <tr>
+            <td>Google Recaptcha Integration</td>
+            <td>@await Html.PartialAsync("~/Views/Shared/_Recaptcha.cshtml")</td>
+        </tr>
+        <tr>
+            <td colspan="2">Create script for database</td>
+        </tr>
+        <tr>
+            <td colspan="2">DB models</td>
+        </tr>
+        <tr>
+            <td colspan="2">Authentication methods</td>
+        </tr>
+        <tr>
+            <td colspan="2">Azure communication and storage integration</td>
+        </tr>
+        <tr>
+            <td colspan="2">Role based authorization logic</td>
+        </tr>
+        <tr>
+            <td colspan="2">Password recovery</td>
+        </tr>
+        <tr>
+            <td colspan="2">Account management</td>
+        </tr>
+        <tr>
+            <td colspan="2">"Contact us" page using azure communication</td>
+        </tr>
+        <tr>
+            <td colspan="2">Security module (Cryptography)</td>
+        </tr>
+    </tbody>
+</table>
+
+@await Html.PartialAsync("~/Views/Shared/_ConfirmationPrompt.cshtml")
+
+<script>
+    function alertYes() {
+        alert('You answered Yes!');
+    }
+
+    function LaunchConfirmation() {
+        dialog("Example dialog, make a choice.", alertYes);
+    }
+
+    function LaunchNotifications() {
+        DisplayNotification("Error from JS", "This a message from JS", "Error");
+        DisplayNotification("Success from JS", "This a message from JS", "Success");
+        DisplayNotification("Info from JS", "This a message from JS", "Info");
+    }
+
+</script>
 

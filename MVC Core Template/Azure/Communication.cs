@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Azure.Communication.Email;
 using Azure.Communication.Email.Models;
 
-namespace Ecommerce.Azure
+namespace CoreTemplate.Azure
 {
     public class Communication
     {

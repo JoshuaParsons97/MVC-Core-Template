@@ -1,8 +1,8 @@
 ﻿using System.Data;
 using System.Text;
-using static Ecommerce.SqlHandler;
+using static CoreTemplate.SqlHandler;
 
-namespace Ecommerce.DataModels
+namespace CoreTemplate.DataModels
 {
     public class PasswordRecovery : Base
     {

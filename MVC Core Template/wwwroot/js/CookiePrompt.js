@@ -3,7 +3,6 @@
 function AcceptCookies() {
     var Expiry = new Date();
     Expiry.setDate(Expiry.getDate() + 30);//Always 30 days
-    console.log(Expiry);
     document.cookie = "CookiesAccepted=True;expires=" + Expiry.toUTCString() + ";path=/";
     CookieModal.hide();
 }
@@ -25,6 +24,7 @@ function getCookie(cname) {
 
 $(document).ready(function () {
     let Cookies = getCookie("CookiesAccepted");
+    console.log(Cookies);
     if (Cookies != "") {
         //User already accepted cookies
     } else {

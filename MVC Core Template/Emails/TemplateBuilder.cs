@@ -1,7 +1,7 @@
 ﻿using System.Reflection.Metadata;
 using System.Text;
 
-namespace Ecommerce.Emails
+namespace CoreTemplate.Emails
 {
     public class TemplateBuilder
     {

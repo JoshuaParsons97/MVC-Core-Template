@@ -1,11 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CoreTemplate.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using static CoreTemplate.Enums;
 
-namespace Ecommerce.Controllers
+namespace CoreTemplate.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {
+            Notification Error = new("Controller Error Example", "This is an error notification from the controller which works on page load", NotificationType.Error);
+            AddNotification(Error);
+
+            Notification Success = new("Controller Success Example", "This a success notification from the controller which works on page load", NotificationType.Success);
+            AddNotification(Success);
+
+            Notification Info = new("Controller Info Example", "This an information notification from the controller which works on page load", NotificationType.Info);
+            AddNotification(Info);
+
             return View();
         }
 

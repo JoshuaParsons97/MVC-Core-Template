@@ -2,7 +2,7 @@
 using System;
 using System.Text;
 
-namespace Ecommerce
+namespace CoreTemplate
 {
     public static class ExtensionMethods
     {

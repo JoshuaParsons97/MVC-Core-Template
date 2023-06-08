@@ -1,4 +1,4 @@
-﻿namespace Ecommerce.ViewModels
+﻿namespace CoreTemplate.ViewModels
 {
     public class Notification
     {

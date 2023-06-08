@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using Ecommerce.DataModels;
+using CoreTemplate.DataModels;
 using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
 using System.Net;
-using Ecommerce.ViewModels;
+using CoreTemplate.ViewModels;
 
-namespace Ecommerce.Controllers
+namespace CoreTemplate.Controllers
 {
     public class BaseController : Controller
     {

@@ -4,10 +4,10 @@
         <div class="modal-dialog">
             <div class="modal-content text-center">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cookie Policy</h5>
+                    <h5 class="modal-title" id="CookieModalLabel">Cookie Policy</h5>
                 </div>
                 <div class="modal-body">
-                    <p>This site uses cookies, by continuing you agree to our <a href="@Url.Action("Legal","Shop", new {TextType = Ecommerce.Enums.LegalTextType.CookiePolicy})">Cookie Policy</a></p>
+                    <p>This site uses cookies, by continuing you agree to our <a href="@Url.Action("Legal","Home", new {TextType = CoreTemplate.Enums.LegalTextType.CookiePolicy})">Cookie Policy</a></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary btn-sm w-100" onclick="AcceptCookies()">Agree and continue</button>

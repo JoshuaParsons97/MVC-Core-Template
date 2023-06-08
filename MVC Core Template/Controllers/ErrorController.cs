@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Ecommerce.Controllers
+namespace CoreTemplate.Controllers
 {
     public class ErrorController : Controller
     {

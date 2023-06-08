@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Ecommerce.ViewModels;
-using Ecommerce.DataModels;
+using CoreTemplate.ViewModels;
+using CoreTemplate.DataModels;
 using System.Web;
 using Microsoft.AspNetCore.Authorization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
 
-namespace Ecommerce.Controllers
+namespace CoreTemplate.Controllers
 {
     public class AccountController : BaseController
     {

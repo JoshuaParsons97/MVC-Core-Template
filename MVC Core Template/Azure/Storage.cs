@@ -3,7 +3,7 @@ using Azure.Storage.Blobs.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.Reflection.Metadata;
 
-namespace Ecommerce.Azure
+namespace CoreTemplate.Azure
 {
     public class Storage
     {

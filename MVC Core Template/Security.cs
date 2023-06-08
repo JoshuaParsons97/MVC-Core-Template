@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Ecommerce
+namespace CoreTemplate
 {
     public class Security
     {
@@ -78,7 +78,7 @@ namespace Ecommerce
             }
             catch (Exception Ex)
             {
-                throw new Exception("Ecommerce > Security > Encrypt " + Ex.Message);
+                throw new Exception("CoreTemplate > Security > Encrypt " + Ex.Message);
             }
         }
 
@@ -109,7 +109,7 @@ namespace Ecommerce
             }
             catch (Exception Ex)
             {
-                throw new Exception("Ecommerce > Security > Dencrypt " + Ex.Message);
+                throw new Exception("CoreTemplate > Security > Dencrypt " + Ex.Message);
             }
 
         }

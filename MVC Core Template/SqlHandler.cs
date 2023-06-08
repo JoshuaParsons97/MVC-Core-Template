@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Ecommerce
+namespace CoreTemplate
 {
     public class SqlHandler
     {

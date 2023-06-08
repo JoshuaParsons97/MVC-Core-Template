@@ -14,7 +14,7 @@ builder.Services.AddAuthentication("UserSession").AddCookie("UserSession", confi
 });
 
 //Load configuration settings into memory when the app starts (faster)
-Ecommerce.Configuration.configuration = builder.Configuration;
+CoreTemplate.Configuration.configuration = builder.Configuration;
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿namespace Ecommerce.DataModels
+﻿namespace CoreTemplate.DataModels
 {
     public class Base
     {

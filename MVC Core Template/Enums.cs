@@ -1,4 +1,4 @@
-﻿namespace Ecommerce
+﻿namespace CoreTemplate
 {
     public class Enums
     {
